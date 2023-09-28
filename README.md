@@ -8,16 +8,11 @@
   </p>
 </p>
 
-Ability to `Log In with ZBD` OAuth2 provider and get user and wallet data with ease.
+Ability to `Log In with ZBD` through a NextAuth.js OAuth2 provider configuration to get user and wallet data with ease.
 
 ## Documentation
 
 For full documentation and guides head on over to [zbd.dev](https://zbd.dev).
-
-## Contributing
-
-We're open to all community contributions! If you'd like to contribute in any way, please first read
-our [Contributing Guide](https://github.com/nextauthjs/.github/blob/main/CONTRIBUTING.md).
 
 ## License
 
