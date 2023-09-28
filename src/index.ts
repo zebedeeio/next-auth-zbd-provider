@@ -10,50 +10,12 @@ export const getZBDProvider = ({
   apiKey,
   scope = ZBD_DEFAULT_SCOPES,
 }: {
-  clientId: string | any;
-  clientSecret: string | any;
-  apiKey: string | any;
-  scope: string | any;
+  clientId: any;
+  clientSecret: any;
+  apiKey: any;
+  scope: any;
 }) => {
-  const provider: {
-    id: any;
-    name: any;
-    type: any;
-    clientId: any;
-    clientSecret: any;
-    authorization: {
-      url: any;
-      params: {
-        scope: any;
-      };
-    };
-    token: any;
-    checks: any;
-    userinfo: {
-      request(context: any): Promise<{}>;
-    };
-    profile(profile: any): {
-      id: any;
-      email: any;
-      gamertag: any;
-      image: any;
-      isVerified: any;
-      lightningAddress: any;
-      publicBio: any;
-      publicStaticCharge: any;
-      social: any;
-      balance: any;
-      remainingAmountLimits: any;
-    };
-    style: {
-      logo: string;
-      logoDark: string;
-      bg: string;
-      text: string;
-      bgDark: string;
-      textDark: string;
-    };
-  } = {
+  const provider: any = {
     id: "zbd",
     name: "ZBD",
     type: "oauth",
