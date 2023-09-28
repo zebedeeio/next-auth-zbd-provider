@@ -10,10 +10,10 @@ export const getZBDProvider = ({
   apiKey,
   scope = ZBD_DEFAULT_SCOPES,
 }: {
-  clientId: string;
-  clientSecret: string;
-  apiKey: string;
-  scope: string;
+  clientId: string | any;
+  clientSecret: string | any;
+  apiKey: string | any;
+  scope: string | any;
 }) => ({
   id: "zbd",
   name: "ZBD",

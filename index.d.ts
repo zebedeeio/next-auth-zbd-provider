@@ -1,7 +1,8 @@
-export declare const getZBDProvider: ({ clientId, clientSecret, apiKey, }: {
+export declare const getZBDProvider: ({ clientId, clientSecret, apiKey, scope, }: {
     clientId: string;
     clientSecret: string;
     apiKey: string;
+    scope: string;
 }) => {
     id: string;
     name: string;
