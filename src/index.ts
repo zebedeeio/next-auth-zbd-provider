@@ -2,16 +2,18 @@ const ZBD_AUTH_URL = 'https://api.zebedee.io/v1/oauth2/authorize';
 const ZBD_TOKEN_URL = 'https://api.zebedee.io/v1/oauth2/token';
 const ZBD_USER_DATA_URL = 'https://api.zebedee.io/v1/oauth2/user';
 const ZBD_WALLET_DATA_URL = 'https://api.zebedee.io/v1/oauth2/wallet';
-const ZBD_SCOPES = 'user wallet';
+const ZBD_DEFAULT_SCOPES = 'user,wallet';
 
 export const getZBDProvider = ({
   clientId,
   clientSecret,
   apiKey,
+  scope = ZBD_DEFAULT_SCOPES,
 }: {
   clientId: string;
   clientSecret: string;
   apiKey: string;
+  scope: string;
 }) => ({
   id: "zbd",
   name: "ZBD",
@@ -20,7 +22,7 @@ export const getZBDProvider = ({
   clientSecret,
   authorization: {
     url: ZBD_AUTH_URL,
-    params: { scope: ZBD_SCOPES }
+    params: { scope: ZBD_DEFAULT_SCOPES }
   },
   token: ZBD_TOKEN_URL,
   checks: ["pkce", "state"],
@@ -116,8 +118,8 @@ export const getZBDProvider = ({
     }
   },
   style: {
-    logo: "/foursquare.svg",
-    logoDark: "/foursquare-dark.svg",
+    logo: "https://cdn.zebedee.io/zbdgg/social/zbd-pfp-default.png",
+    logoDark: "https://cdn.zebedee.io/zbdgg/social/zbd-pfp-default.png",
     bg: "#fff",
     text: "#000",
     bgDark: "#000",
