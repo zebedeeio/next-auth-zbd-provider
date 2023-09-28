@@ -22,7 +22,7 @@ export const getZBDProvider = ({
   clientSecret,
   authorization: {
     url: ZBD_AUTH_URL,
-    params: { scope: ZBD_DEFAULT_SCOPES }
+    params: { scope: scope }
   },
   token: ZBD_TOKEN_URL,
   checks: ["pkce", "state"],

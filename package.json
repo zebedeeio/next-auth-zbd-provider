@@ -1,8 +1,8 @@
 {
   "name": "next-auth-zbd-provider",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "NextAuth.js provider for ZBD OAuth2",
-  "main": "index.js",
+  "main": "index.ts",
   "types": "index.d.ts",
   "private": false,
   "author": "ZBD",
