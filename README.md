@@ -6,9 +6,6 @@
   <p align="center">Open Source. Full Stack. Own Your Data.</p>
   <p align="center" style="align: center;">
     <img src="https://img.shields.io/badge/TypeScript-blue?style=flat-square" alt="TypeScript" />
-    <a href="https://www.npmjs.com/package/next-auth-zbd-provider">
-      <img src="https://img.shields.io/github/v/release/next-auth-zbd-provider?label=latest&style=flat-square" alt="Github Stable Release" />
-    </a>
   </p>
 </p>
 
