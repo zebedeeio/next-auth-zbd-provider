@@ -1,0 +1,20 @@
+{
+  "name": "next-auth-zbd-provider",
+  "version": "0.3.1",
+  "description": "NextAuth.js provider for ZBD OAuth2",
+  "main": "index.js",
+  "private": false,
+  "author": "ZBD",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": ["nextauth", "provider", "auth", "zbd"],
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node-fetch": "^2.6.6",
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "node-fetch": "^3.3.2"
+  }
+}
