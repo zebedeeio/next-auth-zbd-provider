@@ -3,7 +3,6 @@
   <a href="https://nextauth.zbd.dev" target="_blank"><img width="96px" src="https://authjs.dev/img/logo/logo-sm.png" /></a>
   <h3 align="center">ZBD OAuth2 Provider for NextAuth.js</h3>
   <p align="center">Authentication for Next.js Applications.</p>
-  <p align="center">Open Source. Full Stack. Own Your Data.</p>
   <p align="center" style="align: center;">
     <img src="https://img.shields.io/badge/TypeScript-blue?style=flat-square" alt="TypeScript" />
   </p>
