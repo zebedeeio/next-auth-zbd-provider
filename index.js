@@ -10,12 +10,12 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.getZBDProvider = void 0;
-const ZBD_AUTH_URL = 'https://api.zebedee.io/v1/oauth2/authorize';
-const ZBD_TOKEN_URL = 'https://api.zebedee.io/v1/oauth2/token';
-const ZBD_USER_DATA_URL = 'https://api.zebedee.io/v1/oauth2/user';
-const ZBD_WALLET_DATA_URL = 'https://api.zebedee.io/v1/oauth2/wallet';
 const ZBD_DEFAULT_SCOPES = 'user,wallet';
-const getZBDProvider = ({ clientId, clientSecret, apiKey, scope = ZBD_DEFAULT_SCOPES, }) => {
+const getZBDProvider = ({ clientId, clientSecret, apiKey, scope = ZBD_DEFAULT_SCOPES, zbdEnv = "api" }) => {
+    const ZBD_AUTH_URL = `https://${zbdEnv}.zebedee.io/v1/oauth2/authorize`;
+    const ZBD_TOKEN_URL = `https://${zbdEnv}.zebedee.io/v1/oauth2/token`;
+    const ZBD_USER_DATA_URL = `https://${zbdEnv}.zebedee.io/v1/oauth2/user`;
+    const ZBD_WALLET_DATA_URL = `https://${zbdEnv}.zebedee.io/v1/oauth2/wallet`;
     const provider = {
         id: "zbd",
         name: "ZBD",
