@@ -14,6 +14,11 @@ Ability to `Log In with ZBD` through a NextAuth.js OAuth2 provider configuration
 
 For full documentation and guides head on over to [zbd.dev](https://zbd.dev).
 
+## Building
+
+- Edit the `src/index.ts` file to make changes to the provider.
+- `yarn build` builds the top level index.js and index.d.ts.
+
 ## License
 
 MIT

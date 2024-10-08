@@ -1,7 +1,3 @@
-const ZBD_AUTH_URL = 'https://api.zebedee.io/v1/oauth2/authorize';
-const ZBD_TOKEN_URL = 'https://api.zebedee.io/v1/oauth2/token';
-const ZBD_USER_DATA_URL = 'https://api.zebedee.io/v1/oauth2/user';
-const ZBD_WALLET_DATA_URL = 'https://api.zebedee.io/v1/oauth2/wallet';
 const ZBD_DEFAULT_SCOPES = 'user,wallet';
 
 export const getZBDProvider = ({
@@ -9,12 +5,19 @@ export const getZBDProvider = ({
   clientSecret,
   apiKey,
   scope = ZBD_DEFAULT_SCOPES,
+  zbdEnv = "api", 
 }: {
   clientId: any;
   clientSecret: any;
   apiKey: any;
   scope: any;
+  zbdEnv: any;
 }) => {
+  const ZBD_AUTH_URL = `https://${zbdEnv}.zebedee.io/v1/oauth2/authorize`;
+  const ZBD_TOKEN_URL = `https://${zbdEnv}.zebedee.io/v1/oauth2/token`;
+  const ZBD_USER_DATA_URL = `https://${zbdEnv}.zebedee.io/v1/oauth2/user`;
+  const ZBD_WALLET_DATA_URL = `https://${zbdEnv}.zebedee.io/v1/oauth2/wallet`;
+
   const provider: any = {
     id: "zbd",
     name: "ZBD",
